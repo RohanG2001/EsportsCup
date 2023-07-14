@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "gTa";
+    src: url(fonts/pricedown\ bl.otf);
+  }
+
+  :root {
+    --bg-color: #292929;
+    --second-bg-color: #3E3E3E;
+    --tb-bg-color: #5B5B5B;
+    --text-color: #000000;
+    --main-color: #FFFFFF;
+    --og-color: #d1d1d1;
+    --port-color: #570861;
+  }
+
+/* Reset some default styles */
+
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set dark theme colors */
+  body {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #000000;
+  }
+  
+  h1, h2 {
+    color: #fff;
+  }
+  
+  /* Style the header */
+  header {
+    padding: 00px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: gTa;
+    font-size: 60px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: violet;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Style the hero section */
+  .hero {
+    background-image: url('esports-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    color: #fff;
+  }
+  
+  .hero h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 30px;
+    background-color: var(--og-color);
+    box-shadow: 9px 0 30px var(--port-color), 0 5px 5px var(--port-color);
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "gTa", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn:hover {
+    background-color:  var(--text-color);
+    color: #fff;
+  }
+  
+  /* Style the main content area */
+  .main-content {
+    min-height: calc(100vh - 180px); /* Adjust the value based on the header and footer height */
+    padding-bottom: 80px; /* Adjust this value based on the footer height */
+    box-sizing: border-box;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
